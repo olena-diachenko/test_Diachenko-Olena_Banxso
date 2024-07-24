@@ -1,0 +1,12 @@
+@import "breakpoints";
+@import "colors";
+@import "fonts";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font;
+    letter-spacing: 0.2px;
+}
