@@ -29,9 +29,9 @@
     }
 
     &__card {
-        width: 600px;
-        min-width: 600px;
-        max-width: 600px;
+        width: 602px;
+        min-width: 602px;
+        max-width: 602px;
         padding: 48px;
         border-radius: 45px;
         border: 1px solid $dark-color;
@@ -94,5 +94,10 @@
         line-height: 28px;
         font-weight: 700;
         color: $light-color;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }

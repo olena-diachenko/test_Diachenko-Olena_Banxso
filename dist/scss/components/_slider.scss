@@ -3,6 +3,10 @@
 .slider {
     margin-bottom: 217px;
 
+    & > .container {
+        position: relative;
+    }
+
     &__title {
         font-size: 40px;
         font-weight: 500;
@@ -52,48 +56,10 @@
         font-weight: 700;
         line-height: 36px;
         background-color: $button-accent-color;
+        transition: all 0.3s ease;
+        
+            &:hover {
+                opacity: 0.8;
+            }
     }
-}
-
-.swiper {
-    background-color: $dark-color;
-    border-radius: 45px;
-    padding: 48px 0;
-}
-
-.swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
-    background-image: url("../../assets/svg/pagination.svg");
-    background-color: unset;
-}
-
-.swiper-pagination-bullet-active {
-    width: 14px;
-    height: 14px;
-    background-image: url("../../assets/svg/pagination-active.svg");
-    background-color: unset;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-}
-
-.swiper-button-prev {
-    color: $accent-background-color;
-    background-color: $light-color;
-}
-
-.swiper-button-next {
-    color: $dark-color;
-    background-color: $accent-background-color;
-}
-
-.swiper-button-disabled {
-    color: $accent-background-color;
-    background-color: $light-color !important;
-    opacity: 1 !important;
 }
